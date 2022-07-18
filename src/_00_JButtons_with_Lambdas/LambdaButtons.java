@@ -2,8 +2,7 @@ package _00_JButtons_with_Lambdas;
 
 import java.awt.FlowLayout;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class LambdaButtons {
 	private JFrame window = new JFrame();
@@ -20,7 +19,13 @@ public class LambdaButtons {
 		
 		//1. Call the addActionListener methods for each button. Use lambdas
 		//   to define to functionality of the buttons.
-		
+		addNumbers.addActionListener((e)->{
+			JFrame additionFrame = new JFrame("Type two numbers to add below");
+			JPanel additionPanel = new JPanel();
+
+			//			String firstNumber = JOptionPane.showInputDialog("Type your first number");
+			// 			String secondNumber = JOptionPane.showInputDialog("Type your second number")
+		});
 		window.setVisible(true);
 		window.pack();
 	}
